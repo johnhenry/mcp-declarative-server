@@ -14,7 +14,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
  */
 class DeclarativeMCPServer extends McpServer {
   constructor(
-    { name, version, tools, prompts, resources } = {
+    { name, version, tools = [], prompts = [], resources = [] } = {
       toos: [],
       prompts: [],
       resources: [],
