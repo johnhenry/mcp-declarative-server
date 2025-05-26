@@ -24,7 +24,7 @@ export type PromptDefinition = [
 
 export type ResourceDefinition = [uri: string, handler: ResourceHandler];
 
-export interface DeclarativeMCPServerOptions {
+export interface MCPDeclarativeServerOptions {
   name: string;
   version: string;
   tools: ToolDefinition[];
@@ -33,10 +33,16 @@ export interface DeclarativeMCPServerOptions {
 }
 
 /**
- * DeclarativeMCPServer is a class that extends the McpServer class.
+ * MCPDeclarativeServer is a class that extends the McpServer class.
  * It allows you to create a server with tools, prompts, and resources
  * in a declarative way.
  */
-export class DeclarativeMCPServer extends McpServer {
-  constructor(options: DeclarativeMCPServerOptions);
+export class MCPDeclarativeServer extends McpServer {
+  constructor(options: MCPDeclarativeServerOptions);
+}
+export type DeclarativeMCPServer = typeof MCPDeclarativeServer;
+declare module "mcp-declarative-server" {
+  // Adjust the parameter and return types based on the actual implementation
+  export default MCPDeclarativeServer;
+  export { MCPDeclarativeServer, DeclarativeMCPServer };
 }

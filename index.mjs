@@ -1,7 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 
 /**
- * DeclarativeMCPServer is a class that extends the McpServer class.
+ * MCPDeclarativeServer is a class that extends the McpServer class.
  * It allows you to create a server with tools, prompts, and resources
  * in a declarative way.
  * @param {Object} options - The options for the server.
@@ -12,7 +12,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
  * @param {Array} options.resources - The resources for the server.
  *
  */
-class DeclarativeMCPServer extends McpServer {
+class MCPDeclarativeServer extends McpServer {
   constructor(
     { name, version, tools = [], prompts = [], resources = [] } = {
       toos: [],
@@ -39,5 +39,6 @@ class DeclarativeMCPServer extends McpServer {
   }
 }
 
-export { DeclarativeMCPServer };
-export default DeclarativeMCPServer;
+export { MCPDeclarativeServer };
+export { MCPDeclarativeServer as DeclarativeMCPServer };
+export default MCPDeclarativeServer;

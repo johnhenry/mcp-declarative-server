@@ -11,10 +11,10 @@ npm install mcp-client-router
 ## Usage
 
 ```javascript
-import { DeclarativeMCPServer } from "mcp-client-router/declarative-server";
+import { MCPDeclarativeServer } from "mcp-client-router/declarative-server";
 
 // Create a server declaratively
-const server = new DeclarativeMCPServer({
+const server = new MCPDeclarativeServer({
   name: "my-server",
   version: "1.0.0",
 
@@ -77,10 +77,10 @@ await server.connect(transport);
 
 ## API Reference
 
-### `DeclarativeMCPServer`
+### `MCPDeclarativeServer`
 
 ```javascript
-new DeclarativeMCPServer(options);
+new MCPDeclarativeServer(options);
 ```
 
 #### Options
