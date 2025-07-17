@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/johnhenry-mcp-declarative-server-badge.png)](https://mseep.ai/app/johnhenry-mcp-declarative-server)
+
 # MCP Declarative Server
 
 A utility module for creating Model Context Protocol (MCP) servers declaratively.
