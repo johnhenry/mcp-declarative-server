@@ -1,17 +1,19 @@
 # MCP Declarative Server
 
+> Previously published on npm as `mcp-declarative-server` (unscoped). That name is no longer updated; use `@johnhenry/mcp-declarative-server`.
+
 A utility module for creating Model Context Protocol (MCP) servers declaratively.
 
 ## Installation
 
 ```bash
-npm install mcp-client-router
+npm install @johnhenry/mcp-declarative-server
 ```
 
 ## Usage
 
 ```javascript
-import { MCPDeclarativeServer } from "mcp-client-router/declarative-server";
+import { MCPDeclarativeServer } from "@johnhenry/mcp-declarative-server";
 
 // Create a server declaratively
 const server = new MCPDeclarativeServer({

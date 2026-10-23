@@ -41,7 +41,7 @@ export class MCPDeclarativeServer extends McpServer {
   constructor(options: MCPDeclarativeServerOptions);
 }
 export type DeclarativeMCPServer = typeof MCPDeclarativeServer;
-declare module "mcp-declarative-server" {
+declare module "@johnhenry/mcp-declarative-server" {
   // Adjust the parameter and return types based on the actual implementation
   export default MCPDeclarativeServer;
   export { MCPDeclarativeServer, DeclarativeMCPServer };
